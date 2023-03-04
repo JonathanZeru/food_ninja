@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() { runApp( const MaterialApp( //TODO REMOVE CONST <--------
+void main() { runApp( MaterialApp( //TODO REMOVE CONST <--------
     initialRoute: '/',
     routes: {
       // '/': (context) => const CLass_Name(), //change Class name with your page widget and import the widget
