@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class CoverText extends StatelessWidget {
   const CoverText({
@@ -12,12 +10,12 @@ class CoverText extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: <Widget>[
-        Container(
+        SizedBox(
           width: 220,
           child: Column(
             children: [
               Row(
-                children: [
+                children:const [
                   Text(
                     textAlign: TextAlign.start,
                     'Find Your',
@@ -29,10 +27,10 @@ class CoverText extends StatelessWidget {
                   Expanded(child: SizedBox()),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 8,
               ),
-              Text(
+              const Text(
                 textAlign: TextAlign.start,
                 'Favorite Food',
                 style: TextStyle(

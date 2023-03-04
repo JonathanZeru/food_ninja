@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class Search extends StatelessWidget {
   const Search({
@@ -12,7 +10,7 @@ class Search extends StatelessWidget {
     return Container(
       width: 270,
       height: 50,
-      margin: EdgeInsets.only(right: 10),
+      margin: const EdgeInsets.only(right: 10),
       child: TextFormField(
         decoration: InputDecoration(
           prefixIcon: const Icon(

@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:food_ninja/pages/ExploreMenu.dart';
+import 'package:food_ninja/pages/ExploreRestaurantWIthFilter.dart';
 
 void main() {
   runApp(MaterialApp(
     //TODO REMOVE CONST <--------
-    initialRoute: '/ExploreMenu',
+    initialRoute: '/ExploreRestaurantWIthFilter',
     routes: {
-      '/ExploreMenu': (context) =>
-          const ExploreMenu(), //change Class name with your page widget and import the widget
+      // '/ExploreMenu': (context) =>
+      //     const ExploreMenu(), //change Class name with your page widget and import the widget
+      '/ExploreRestaurantWIthFilter': (context) =>
+          const ExploreRestaurantWIthFilter(), //change Class name with your page widget and import the widget
       // '/': (context) => const CLass_Name(), //change Class name with your page widget and import the widget
     },
   ));
