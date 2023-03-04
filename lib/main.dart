@@ -6,7 +6,7 @@ void main() {
     //TODO REMOVE CONST <--------
     initialRoute: '/',
     routes: {
-      '/': (context) =>
+      '/ExploreMenu': (context) =>
           const ExploreMenu(), //change Class name with your page widget and import the widget
       // '/': (context) => const CLass_Name(), //change Class name with your page widget and import the widget
     },
