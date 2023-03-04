@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+
 class FilterIcon extends StatelessWidget {
   const FilterIcon({
     super.key,
@@ -9,6 +10,7 @@ class FilterIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IconButton(
+        iconSize: 35,
         onPressed: () => {},
         icon: Image.asset('assets/Filter Icon.png'));
   }

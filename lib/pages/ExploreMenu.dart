@@ -18,44 +18,55 @@ class _ExploreMenuState extends State<ExploreMenu> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: Center(
-          child: Column(
-            children: <Widget>[
-              SizedBox(
-                width: 323,
-                height: 240,
-                child: Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[
-                      Row(
-                        children: const <Widget>[
-                          CoverText(),
-                          IconNotification(),
-                        ],
-                      ),
-                      Row(
-                        children:const  [
-                          Search(),
-                          FilterIcon(),
-                        ],
-                      ),
-                      const Text(
-                        'Popular Menu',
-                        style: TextStyle(
-                          fontFamily: 'BentonSans Bold',
-                          fontSize: 15,
+        body: Container(
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/Onboarding.png"),
+              fit: BoxFit.cover,
+            ),
+          ),
+          child: Center(
+            child: Column(
+              children: <Widget>[
+                SizedBox(
+                  height: 50,
+                ),
+                SizedBox(
+                  width: 323,
+                  height: 240,
+                  child: Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        Row(
+                          children: const <Widget>[
+                            CoverText(),
+                            IconNotification(),
+                          ],
                         ),
-                      ),
-                    ],
+                        Row(
+                          children: const [
+                            Search(),
+                            FilterIcon(),
+                          ],
+                        ),
+                        const Text(
+                          'Popular Menu',
+                          style: TextStyle(
+                            fontFamily: 'BentonSans Bold',
+                            fontSize: 15,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-              ),
-              SizedBox(
-                width: 323,
-                height: 240,
-              ),
-            ],
+                SizedBox(
+                  width: 323,
+                  height: 240,
+                ),
+              ],
+            ),
           ),
         ),
       ),

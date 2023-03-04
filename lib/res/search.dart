@@ -9,7 +9,7 @@ class Search extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width:267,
+      width:220,
       height:50,
       child: TextFormField(
         decoration: InputDecoration(
