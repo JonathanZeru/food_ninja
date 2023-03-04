@@ -10,7 +10,7 @@ class FilterIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IconButton(
-        iconSize: 35,
+        iconSize: 40,
         onPressed: () => {},
         icon: Image.asset('assets/Filter Icon.png'));
   }

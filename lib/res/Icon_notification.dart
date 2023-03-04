@@ -10,6 +10,8 @@ class IconNotification extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IconButton(
-        onPressed: () => {}, icon: Image.asset('assets/Filter Icon.png'));
+        iconSize: 40,
+        onPressed: () => {},
+        icon: Image.asset('assets/Filter Icon.png'));
   }
 }

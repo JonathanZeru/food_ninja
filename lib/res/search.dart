@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+
 class Search extends StatelessWidget {
   const Search({
     super.key,
@@ -9,8 +10,9 @@ class Search extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width:220,
-      height:50,
+      width: 270,
+      height: 50,
+      margin: EdgeInsets.only(right: 10),
       child: TextFormField(
         decoration: InputDecoration(
           prefixIcon: const Icon(
@@ -23,12 +25,12 @@ class Search extends StatelessWidget {
           hintStyle: const TextStyle(
             fontFamily: 'Poppins',
           ),
-          contentPadding: const EdgeInsets.all(18.0),
           filled: true,
           fillColor: Colors.white,
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
             borderSide: BorderSide.none,
+            gapPadding: 40,
           ),
         ),
         textAlign: TextAlign.start,
