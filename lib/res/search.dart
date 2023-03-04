@@ -8,8 +8,9 @@ class Search extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      elevation: 5,
+    return Container(
+      width:267,
+      height:50,
       child: TextFormField(
         decoration: InputDecoration(
           prefixIcon: const Icon(

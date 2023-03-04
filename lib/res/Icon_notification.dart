@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+
 class IconNotification extends StatelessWidget {
   const IconNotification({
     super.key,
@@ -9,7 +10,6 @@ class IconNotification extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IconButton(
-        onPressed: () => {},
-        icon: Image.asset('assets/Icon Notification.png'));
+        onPressed: () => {}, icon: Image.asset('assets/Filter Icon.png'));
   }
 }

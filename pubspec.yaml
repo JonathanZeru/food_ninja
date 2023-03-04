@@ -82,10 +82,10 @@ flutter:
         - asset: fonts/BentonSans Comp Medium.otf
     - family: 'BentonSans Book'
       fonts:
-        - asset: fonts/BentonSans Comp Book.otf
+        - asset: fonts/BentonSans Cond Book.otf
     - family: 'BentonSans Regular'
       fonts:
-        - asset: fonts/BentonSans Comp Regular.otf
+        - asset: fonts/BentonSans Cond Regular.otf
     - family: 'Roboto'
       fonts:
         - asset: fonts/Roboto-Regular.ttf

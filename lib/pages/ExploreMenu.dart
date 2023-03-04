@@ -18,30 +18,45 @@ class _ExploreMenuState extends State<ExploreMenu> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: Column(
-          children: <Widget>[
-            SizedBox(
-              width: 323,
-              height: 240,
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
-                  const CoverText(),
-                  Container(
-                      margin: const EdgeInsets.only(left: -2),
-                      child: const IconNotification()),
-                  const Search(),
-                  Container(
-                      margin: const EdgeInsets.only(right: -2),
-                      child: const FilterIcon()),
-                ],
+        body: Center(
+          child: Column(
+            children: <Widget>[
+              SizedBox(
+                width: 323,
+                height: 240,
+                child: Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                      Row(
+                        children: const <Widget>[
+                          CoverText(),
+                          IconNotification(),
+                        ],
+                      ),
+                      Row(
+                        children:const  [
+                          Search(),
+                          FilterIcon(),
+                        ],
+                      ),
+                      const Text(
+                        'Popular Menu',
+                        style: TextStyle(
+                          fontFamily: 'BentonSans Bold',
+                          fontSize: 15,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               ),
-            ),
-            SizedBox(
-              width: 323,
-              height: 240,
-            ),
-          ],
+              SizedBox(
+                width: 323,
+                height: 240,
+              ),
+            ],
+          ),
         ),
       ),
     );

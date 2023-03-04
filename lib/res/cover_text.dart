@@ -18,13 +18,7 @@ class CoverText extends StatelessWidget {
             fontSize: 31,
           ),
         ),
-         Text(
-          'Popular Menu',
-          style:TextStyle(
-            fontFamily: 'BentonSans Bold',
-            fontSize: 15,
-          ),
-        ),
+         
       ],
     );
   }

@@ -4,7 +4,7 @@ import 'package:food_ninja/pages/ExploreMenu.dart';
 void main() {
   runApp(MaterialApp(
     //TODO REMOVE CONST <--------
-    initialRoute: '/',
+    initialRoute: '/ExploreMenu',
     routes: {
       '/ExploreMenu': (context) =>
           const ExploreMenu(), //change Class name with your page widget and import the widget
