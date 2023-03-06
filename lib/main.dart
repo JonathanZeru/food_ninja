@@ -1,9 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:food_ninja/pages/signup_login/login.dart';
+import 'package:food_ninja/pages/signup_login/signup0.dart';
+import 'package:food_ninja/pages/signup_login/signup1.dart';
+import 'package:food_ninja/pages/signup_login/signup2.dart';
 
-void main() { runApp( const MaterialApp( //TODO REMOVE CONST <--------
-    initialRoute: '/',
+void main() { runApp( MaterialApp( //TODO REMOVE CONST <--------
+    initialRoute: '/signup0',
     routes: {
       // '/': (context) => const CLass_Name(), //change Class name with your page widget and import the widget
+      '/signup0': (context) => const Signup0(),
+      '/signup1': (context) => const Signup1(),
+      '/signup2': (context) => const Signup2(),
+      '/login': (context) => const Login(),
     },
   ));
 }
