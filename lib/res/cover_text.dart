@@ -15,10 +15,10 @@ class CoverText extends StatelessWidget {
           child: Column(
             children: [
               Row(
-                children:const [
+                children: [
                   Text(
-                    textAlign: TextAlign.start,
                     'Find Your',
+                    textAlign: TextAlign.start,
                     style: TextStyle(
                       fontFamily: 'BentonSans Bold',
                       fontSize: 50,
@@ -30,9 +30,9 @@ class CoverText extends StatelessWidget {
               const SizedBox(
                 height: 8,
               ),
-              const Text(
+               Text(
+                 'Favorite Food',
                 textAlign: TextAlign.start,
-                'Favorite Food',
                 style: TextStyle(
                   fontFamily: 'BentonSans Bold',
                   fontSize: 50,
