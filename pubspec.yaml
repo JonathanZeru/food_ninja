@@ -90,5 +90,21 @@ flutter:
     - family: Viga
       fonts:
         - asset: fonts/Viga-Regular.ttf
+    - family: 'BentonSans Bold'
+      fonts:
+        - asset: fonts/BentonSans Comp Bold.otf
+    - family: 'BentonSans Medium'
+      fonts:
+        - asset: fonts/BentonSans Comp Medium.otf
+    - family: 'BentonSans Book'
+      fonts:
+        - asset: fonts/BentonSans Cond Book.otf
+    - family: 'BentonSans Regular'
+      fonts:
+        - asset: fonts/BentonSans Cond Regular.otf
+    - family: 'Roboto'
+      fonts:
+        - asset: fonts/Roboto-Regular.ttf
+
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
