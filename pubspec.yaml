@@ -65,6 +65,9 @@ flutter:
     - assets/patterns/
     - assets/company/
     - assets/notification_icons/
+    - assets/rpm/
+    - assets/food/
+    - assets/people/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

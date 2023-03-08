@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:food_ninja/pages/checkout/edit_location.dart';
 import 'package:food_ninja/pages/checkout/edit_payments.dart';
 import 'package:food_ninja/pages/notification_page.dart';
+import 'package:food_ninja/pages/restaurant_page.dart';
 import 'package:food_ninja/pages/signup_login/login.dart';
 import 'package:food_ninja/pages/signup_login/signup0.dart';
 import 'package:food_ninja/pages/signup_login/signup1.dart';
@@ -11,18 +12,19 @@ import 'package:food_ninja/pages/ExploreRestaurantWIthFilter.dart';
 
 void main() {
   runApp(MaterialApp(
-    initialRoute: '/edit_location',
+    initialRoute: '/restaurant_page',
     routes: {
       // '/': (context) => const CLass_Name(), //change Class name with your page widget and import the widget
       '/signup0': (context) => const Signup0(),
       '/signup1': (context) => const Signup1(),
       '/signup2': (context) => const Signup2(),
       '/login': (context) => const Login(),
-      '/notificationPage': (context) => const NotificationPage(),
+      '/notification_page': (context) => const NotificationPage(),
       '/edit_payment': (context) => const EditPayments(),
       '/edit_location': (context) => const EditLocation(),
+      '/restaurant_page': (context) => const RestaurantPage(),
       '/ExploreMenu': (context) => const ExploreMenu(),
-      '/ExploreRestaurantWIthFilter': (context) => const ExploreRestaurantWIthFilter(), 
+      '/ExploreRestaurantWIthFilter': (context) => const ExploreRestaurantWIthFilter(),
     },
   ));
 }

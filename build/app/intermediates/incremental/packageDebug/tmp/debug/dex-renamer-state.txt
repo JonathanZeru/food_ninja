@@ -1,4 +1,4 @@
-#Wed Mar 08 18:40:57 EAT 2023
+#Wed Mar 08 22:05:11 EAT 2023
 base.0=/home/dagim/AndroidStudioProjects/food_ninja/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
