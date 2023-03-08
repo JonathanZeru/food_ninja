@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:food_ninja/pages/Checkout/confirm_order.dart';
 import 'package:food_ninja/res/res.dart';
 
 import '../logic/food.dart';
@@ -76,7 +77,7 @@ class OrderDetailsCard extends StatefulWidget {
 
 class _OrderDetailsCardState extends State<OrderDetailsCard> {
   int quantity = 1;
-  _PriceInfoCardState price = _PriceInfoCardState() ;
+  //_PriceInfoCardState price = _PriceInfoCardState() ;
   @override
   Widget build(BuildContext context) {
 
@@ -212,10 +213,7 @@ class _OrderDetailsCardState extends State<OrderDetailsCard> {
 }
 
 class PriceInfoCard extends StatefulWidget {
-
-
   List<Food> foods;
-  late double totalPrice;
 
   PriceInfoCard({required this.foods});
 
@@ -224,23 +222,21 @@ class PriceInfoCard extends StatefulWidget {
 }
 
 class _PriceInfoCardState extends State<PriceInfoCard> {
-  _OrderDetailsCardState orderDetail = _OrderDetailsCardState();
-  late int quantity;
-  int getQuantity(){
-    setState(() {
-      quantity = orderDetail.quantity;
-    });
-    return quantity;
-  }
+  // _OrderDetailsCardState orderDetail = _OrderDetailsCardState();
+  // late int quantity;
+  // int getQuantity(){
+  //   setState(() {
+  //     quantity = orderDetail.quantity;
+  //   });
+  //   return quantity;
+  // }
 
   double subtotalCalculator(){
     double subtotal = 0;
-    setState(() {
-      quantity = getQuantity();
+      //quantity = getQuantity();
       widget.foods.forEach((food)=>{
-        subtotal += food.price * quantity
+        subtotal += food.price
       });
-    });
     return subtotal;
   }
 
@@ -364,16 +360,23 @@ class _PriceInfoCardState extends State<PriceInfoCard> {
             ),
             width: 350,
             height:50,
-            child: const Center(
-              child: GradientText(
-                  'Place My Order',
-                  style: TextStyle(
-                    fontFamily: 'Poppins',
-                    fontWeight: FontWeight.w600,
-                    fontSize: 16.0,
-                  ),
-                  gradient: LinearGradient(colors: [MyColors.mainGreen0, MyColors.mainGreen1,])
-              )
+            child: InkWell(
+              onTap: (){
+                Navigator. push(
+                    context,
+                    MaterialPageRoute(builder: (context) => ConfirmOrder()));
+              },
+              child: const Center(
+                child: GradientText(
+                    'Place My Order',
+                    style: TextStyle(
+                      fontFamily: 'Poppins',
+                      fontWeight: FontWeight.w600,
+                      fontSize: 16.0,
+                    ),
+                    gradient: LinearGradient(colors: [MyColors.mainGreen0, MyColors.mainGreen1,])
+                )
+              ),
             ),
           )
         ],
@@ -381,3 +384,5 @@ class _PriceInfoCardState extends State<PriceInfoCard> {
     );
   }
 }
+
+

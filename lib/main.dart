@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:food_ninja/pages/Checkout/checkout.dart';
+import 'package:food_ninja/pages/Checkout/confirm_order.dart';
 import 'package:food_ninja/pages/signup_login/login.dart';
 import 'package:food_ninja/pages/signup_login/signup0.dart';
 import 'package:food_ninja/pages/signup_login/signup1.dart';
 import 'package:food_ninja/pages/signup_login/signup2.dart';
 import 'package:food_ninja/pages/ExploreMenu.dart';
 import 'package:food_ninja/pages/ExploreRestaurantWIthFilter.dart';
+import 'package:food_ninja/res/CARD.dart';
 
 void main() {
   runApp(MaterialApp(
-    initialRoute: '/Checkout',
+    initialRoute: '/ConfirmOrder',
     routes: {
       // '/': (context) => const CLass_Name(), //change Class name with your page widget and import the widget
       '/signup0': (context) => const Signup0(),
@@ -19,6 +21,7 @@ void main() {
       '/ExploreMenu': (context) => const ExploreMenu(), 
       '/ExploreRestaurantWIthFilter': (context) => const ExploreRestaurantWIthFilter(),
       '/Checkout': (context) => Checkout(),
+      '/ConfirmOrder': (context) => ConfirmOrder(),
     },
   ));
 }

@@ -1,4 +1,4 @@
-#Wed Mar 08 21:45:06 EAT 2023
+#Wed Mar 08 23:23:14 EAT 2023
 base.0=C\:\\Users\\25194\\Documents\\GitHub\\food_ninja\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
