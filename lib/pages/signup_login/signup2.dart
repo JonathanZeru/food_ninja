@@ -3,18 +3,9 @@ import 'package:food_ninja/res/res.dart';
 
 import '../../res/button.dart';
 
-class Signup2 extends StatefulWidget {
+class Signup2 extends StatelessWidget {
   const Signup2({Key? key}) : super(key: key);
 
-  @override
-  State<Signup2> createState() => _Signup2State();
-}
-
-class _Signup2State extends State<Signup2> {
-  @override
-  void initState() {
-    super.initState();
-  }
   @override
   Widget build(BuildContext context) {
     return Container(

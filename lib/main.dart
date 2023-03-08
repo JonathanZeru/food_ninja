@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:food_ninja/pages/checkout/edit_location.dart';
+import 'package:food_ninja/pages/checkout/edit_payments.dart';
 import 'package:food_ninja/pages/notification_page.dart';
 import 'package:food_ninja/pages/signup_login/login.dart';
 import 'package:food_ninja/pages/signup_login/signup0.dart';
@@ -9,7 +11,7 @@ import 'package:food_ninja/pages/ExploreRestaurantWIthFilter.dart';
 
 void main() {
   runApp(MaterialApp(
-    initialRoute: '/notificationPage',
+    initialRoute: '/edit_location',
     routes: {
       // '/': (context) => const CLass_Name(), //change Class name with your page widget and import the widget
       '/signup0': (context) => const Signup0(),
@@ -17,6 +19,8 @@ void main() {
       '/signup2': (context) => const Signup2(),
       '/login': (context) => const Login(),
       '/notificationPage': (context) => const NotificationPage(),
+      '/edit_payment': (context) => const EditPayments(),
+      '/edit_location': (context) => const EditLocation(),
       '/ExploreMenu': (context) => const ExploreMenu(),
       '/ExploreRestaurantWIthFilter': (context) => const ExploreRestaurantWIthFilter(), 
     },

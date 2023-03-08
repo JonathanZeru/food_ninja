@@ -16,6 +16,9 @@ class _NotificationPageState extends State<NotificationPage> {
     NotificationData(img: 'assets/notification_icons/checked.png', text: 'Your order has been taken by the driver',  time: 'Recently',),
     NotificationData(img: 'assets/notification_icons/money.png', text: 'Topup for \$100 was successful',  time: '10.00 Am',),
     NotificationData(img: 'assets/notification_icons/x-button.png', text: 'Your order has been canceled',  time: '22 Juny 2021',),
+    NotificationData(img: 'assets/notification_icons/checked.png', text: 'Your order has been taken by the driver',  time: 'Recently',),
+    NotificationData(img: 'assets/notification_icons/money.png', text: 'Topup for \$100 was successful',  time: '10.00 Am',),
+    NotificationData(img: 'assets/notification_icons/x-button.png', text: 'Your order has been canceled',  time: '22 Juny 2021',),
   ];
   @override
   Widget build(BuildContext context) {
@@ -53,8 +56,10 @@ class _NotificationPageState extends State<NotificationPage> {
                   ),
                 ),
                 Expanded(
-                    child: Column (
-                      children: notifications.map((e) => NotificationCard(data: e)).toList(),
+                    child: SingleChildScrollView(
+                      child: Column (
+                        children: notifications.map((e) => NotificationCard(data: e)).toList(),
+                      ),
                     )
                 ),
               ],

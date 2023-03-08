@@ -30,99 +30,102 @@ class _Signup0State extends State<Signup0> {
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: SafeArea(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-              Image.asset('assets/Logo.png', height: 150,),
-               const GradientText(
-                'FoodNinja',
-                style: TextStyle(
-                 fontFamily: 'Viga',
-                 fontWeight: FontWeight.w400,
-                 fontSize: 40,
-               ),
-                gradient: LinearGradient(colors: [MyColors.mainGreen0, MyColors.mainGreen1,]),
-              ),
-              const Text(
-                'Deliver Favorite Food',
-                style:  TextStyle(
-                  fontFamily: 'Inter',
-                  fontWeight: FontWeight.w600,
-                  fontSize: 15,
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                Image.asset('assets/Logo.png', height: 150,),
+                 const GradientText(
+                  'FoodNinja',
+                  style: TextStyle(
+                   fontFamily: 'Viga',
+                   fontWeight: FontWeight.w400,
+                   fontSize: 40,
+                 ),
+                  gradient: LinearGradient(colors: [MyColors.mainGreen0, MyColors.mainGreen1,]),
                 ),
-              ),
-              const SizedBox(height: 50,),
-              Text(
-                'Sign Up For Free',
-                style: MyText.poppins(20, FontWeight.w700),
-              ),
-              Form(
-                key: formKey,
-                child: Container(
-                  margin: const EdgeInsets.all(30),
-                  child: Column(
-                    children: <Widget>[
-                      InputField0(txt: 'Username', prefixIcon: 'assets/icons/Profile.png' , cont: _userName, valid: MyOther.requiredValidator,),
-                      const SizedBox(height: 20,),
-                      InputField0(txt: 'Email', prefixIcon: 'assets/icons/Message.png' , cont: _email, valid: MyOther.emailValidator,),
-                      const SizedBox(height: 20,),
-                      PasswordInputField(txt: 'Password', cont: _password,),
-                      const SizedBox(height: 20,),
-                      Row(
-                        children: <Widget>[
-                          InkWell(
-                            child: const Icon(Icons.check_circle, color: MyColors.mainGreen0, size: 24,),
-                            onTap: () {
-                              //TODO: Check uncheck
-                            },
-                          ),
-                          const SizedBox(width: 10,),
-                          const Text('Keep Me Signed In')
-                        ],
-                      ),
-                      const SizedBox(height: 10,),
-                      Row(
-                        children: <Widget>[
-                          InkWell(
-                            child: const Icon(Icons.check_circle, color: MyColors.mainGreen0, size: 24,),
-                            onTap: () {
-                              //TODO: Check uncheck
-                            },
-                          ),
-                          const SizedBox(width: 10,),
-                          const Text('Email Me About Special Pricing')
-                        ],
-                      ),
-                    ],
+                const Text(
+                  'Deliver Favorite Food',
+                  style:  TextStyle(
+                    fontFamily: 'Inter',
+                    fontWeight: FontWeight.w600,
+                    fontSize: 15,
                   ),
                 ),
-              ),
-              SizedBox(
-                width: 225,
-                height: 60,
-                child: GreenButton(txt:'Create Account', action:  () {
-                  final isValidForm = formKey.currentState!.validate();
-                  if(isValidForm) {
-                    //TODO: store input data on an object
-                    print('_____________________________________________________________________\t\t\t\tmyUser.firstName\t\t\t____________________________________');
-                    Navigator.pushNamed(context, '/signup1');//TODO USE .push
-                  }
-                }),
-              ),
-              const SizedBox(height: 25,),
-              Container(
-                margin: const EdgeInsets.symmetric(vertical: 0, horizontal: 60),
-                child: InkWell(
-                  child: const Text(
-                    'already have an account?',
-                    style: MyText.link,
-                  ),
-                  onTap: () {
-                    print('_____________________________________________________________________\t\t\t\tmyUser.firstName\t\t\t____________________________________');
-                  },
+                const SizedBox(height: 50,),
+                Text(
+                  'Sign Up For Free',
+                  style: MyText.poppins(20, FontWeight.w700),
                 ),
-              )
-            ],
+                Form(
+                  key: formKey,
+                  child: Container(
+                    margin: const EdgeInsets.all(30),
+                    child: Column(
+                      children: <Widget>[
+                        InputField0(txt: 'Username', prefixIcon: 'assets/icons/Profile.png' , cont: _userName, valid: MyOther.requiredValidator,),
+                        const SizedBox(height: 20,),
+                        InputField0(txt: 'Email', prefixIcon: 'assets/icons/Message.png' , cont: _email, valid: MyOther.emailValidator,),
+                        const SizedBox(height: 20,),
+                        PasswordInputField(txt: 'Password', cont: _password,),
+                        const SizedBox(height: 20,),
+                        Row(
+                          children: <Widget>[
+                            InkWell(
+                              child: const Icon(Icons.check_circle, color: MyColors.mainGreen0, size: 24,),
+                              onTap: () {
+                                //TODO: Check uncheck
+                              },
+                            ),
+                            const SizedBox(width: 10,),
+                            const Text('Keep Me Signed In')
+                          ],
+                        ),
+                        const SizedBox(height: 10,),
+                        Row(
+                          children: <Widget>[
+                            InkWell(
+                              child: const Icon(Icons.check_circle, color: MyColors.mainGreen0, size: 24,),
+                              onTap: () {
+                                //TODO: Check uncheck
+                              },
+                            ),
+                            const SizedBox(width: 10,),
+                            const Text('Email Me About Special Pricing')
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: 225,
+                  height: 60,
+                  child: GreenButton(txt:'Create Account', action:  () {
+                    final isValidForm = formKey.currentState!.validate();
+                    if(isValidForm) {
+                      //TODO: store input data on an object
+                      print('_____________________________________________________________________\t\t\t\tmyUser.firstName\t\t\t____________________________________');
+                      Navigator.pushNamed(context, '/signup1');//TODO USE .push
+                    }
+                  }),
+                ),
+                const SizedBox(height: 25,),
+                Container(
+                  margin: const EdgeInsets.symmetric(vertical: 0, horizontal: 60),
+                  child: InkWell(
+                    child: const Text(
+                      'already have an account?',
+                      style: MyText.link,
+                    ),
+                    onTap: () {
+                      Navigator.pushNamed(context, '/login');
+                      print('_____________________________________________________________________\t\t\t\tmyUser.firstName\t\t\t____________________________________');
+                    },
+                  ),
+                )
+              ],
+            ),
           )
         ),
       ),
