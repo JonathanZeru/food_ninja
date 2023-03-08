@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_ninja/pages/Checkout/checkout.dart';
 import 'package:food_ninja/pages/signup_login/login.dart';
 import 'package:food_ninja/pages/signup_login/signup0.dart';
 import 'package:food_ninja/pages/signup_login/signup1.dart';
@@ -8,7 +9,7 @@ import 'package:food_ninja/pages/ExploreRestaurantWIthFilter.dart';
 
 void main() {
   runApp(MaterialApp(
-    initialRoute: '/ExploreRestaurantWIthFilter',
+    initialRoute: '/Checkout',
     routes: {
       // '/': (context) => const CLass_Name(), //change Class name with your page widget and import the widget
       '/signup0': (context) => const Signup0(),
@@ -16,7 +17,8 @@ void main() {
       '/signup2': (context) => const Signup2(),
       '/login': (context) => const Login(),
       '/ExploreMenu': (context) => const ExploreMenu(), 
-      '/ExploreRestaurantWIthFilter': (context) => const ExploreRestaurantWIthFilter(), 
+      '/ExploreRestaurantWIthFilter': (context) => const ExploreRestaurantWIthFilter(),
+      '/Checkout': (context) => Checkout(),
     },
   ));
 }

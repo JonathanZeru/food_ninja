@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Restaurant{
-  String distance;
+  double distance;
   String restaurantID;
   String name;
   String detail;

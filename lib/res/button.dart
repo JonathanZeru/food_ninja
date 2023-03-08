@@ -79,8 +79,8 @@ class Back extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 55,
-      height: 55,
+      width: 50,
+      height: 50,
       decoration: BoxDecoration(
         color: MyColors.mainOrange0,
         borderRadius: BorderRadius.circular(15),

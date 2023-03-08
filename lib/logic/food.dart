@@ -7,5 +7,6 @@ class Food {
   String detail;
   String restaurantID;
 
+
   Food({ required this.foodName, required this.price, required this.foodImage, required this.restaurantID,required this.detail});
 }
