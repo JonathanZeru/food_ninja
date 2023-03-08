@@ -105,7 +105,7 @@ class _Signup0State extends State<Signup0> {
                   if(isValidForm) {
                     //TODO: store input data on an object
                     print('_____________________________________________________________________\t\t\t\tmyUser.firstName\t\t\t____________________________________');
-                    Navigator.pushReplacementNamed(context, '/signup1');
+                    Navigator.pushNamed(context, '/signup1');//TODO USE .push
                   }
                 }),
               ),

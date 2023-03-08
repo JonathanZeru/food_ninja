@@ -41,7 +41,7 @@ class _Signup1State extends State<Signup1> {
                     children: [
                       Back(
                         action: () {
-                          Navigator.pushReplacementNamed(context, '/signup0');
+                          Navigator.pop(context);
                         },
                       ),
                       const SizedBox(height: 20),

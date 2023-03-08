@@ -19,6 +19,14 @@ class MyText {
       fontFamily: 'Poppins',
     );
   }
+  static TextStyle hinter(double? size, FontWeight weight){
+    return TextStyle(
+      fontWeight: weight,
+      fontSize: size,
+      color: MyColors.border,
+      fontFamily: 'Poppins',
+    );
+  }
   static const TextStyle hint = TextStyle(
       fontFamily: 'Poppins',
       fontWeight: FontWeight.w400,
