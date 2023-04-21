@@ -1,0 +1,56 @@
+local.properties
+GeneratedPluginRegistrant.java
+# Default ignored files
+/shelf/
+/workspace.xml
+# Flutter/Dart specific files
+**/build/
+**/ios/Pods/
+**/android/.gradle/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build_runner/
+/generated/
+.vscode/
+.idea/
+*.iml
+*.lock
+*.metadata
+*.packages
+*.flutter-plugins
+*.flutter-plugins-dependencies
+*.dart-tool/
+build/
+ios/Pods/
+macos/Pods/
+android/.gradle/
+android/build/
+android/gradle/
+ios/Flutter/
+ios/Podfile.lock
+macos/Podfile.lock
+pubspec.lock
+web/assets/packages/
+pubspec.yaml.lock
+*.log
+# Android specific files
+**/key.properties
+**/android/app/google-services.json
+android/local.properties
+**/android/app/debug.keystore
+**/android/app/release.keystore
+**/android/key.properties
+# macOS specific files
+.DS_Store
+# Logs and crashlytics
+**/*.log
+**/crashlytics
+**/fastlane/report.xml
+# Other common files
+Thumbs.db
+
+food_ninja_android.iml
