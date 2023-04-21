@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_ninja/test_main.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 void main() {
@@ -9,9 +10,10 @@ void main() {
   //     'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9od3Jhc25iaGl5bWFlamR3Z3pwIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzc5MzAwOTUsImV4cCI6MTk5MzUwNjA5NX0.1YDUDxiSQRkxLMpulMPS8t2vA0EcZX03_M0lrLlz3kw',
   //   );
   // }
-  runApp(const MaterialApp(//TODO : remove const
+  runApp(MaterialApp(
     initialRoute: '/',//TODO : ADD ROUTE
     routes: {
+      '/': (context) => const TestMain(),
       // '/': (context) => const CLass_Name(), //change Class name with your page widget and import the widget
       // '/splash': (context) => const SplashPage0(),
       // '/splashPage1': (context) => const SplashPage1(),
