@@ -5,7 +5,6 @@ import 'package:food_ninja/res/my_colors.dart';
 import 'package:food_ninja/res/my_other.dart';
 import 'package:food_ninja/res/input_fields/password_input_field.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-
 import '../../res/input_fields/input_field_0.dart';
 import '../../res/my_text.dart';
 
@@ -137,7 +136,7 @@ class _Signup0State extends State<Signup0> {
                     final isValidForm = formKey.currentState!.validate();
                     if(isValidForm) {
                       //TODO: store input data on an object
-                      print('_____________________________________________________________________\t\t\t\tmyUser.firstName\t\t\t____________________________________');
+                      // print('_____________________________________________________________________\t\t\t\tmyUser.firstName\t\t\t____________________________________');
                       Navigator.pushNamed(context, '/signup1');//TODO USE .push
                     }
                   }),
@@ -151,8 +150,8 @@ class _Signup0State extends State<Signup0> {
                       style: MyText.link,
                     ),
                     onTap: () {
-                      // Navigator.pushNamed(context, '/login');
-                      print('_____________________________________________________________________\t\t\t\tmyUser.firstName\t\t\t____________________________________');
+                      Navigator.pushNamed(context, '/login');
+                      // print('_____________________________________________________________________\t\t\t\tmyUser.firstName\t\t\t____________________________________');
                     },
                   ),
                 )
