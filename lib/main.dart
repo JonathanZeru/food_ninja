@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:food_ninja/pages/food_page.dart';
+import 'package:food_ninja/pages/notification_page.dart';
+import 'package:food_ninja/pages/restaurant_page.dart';
 import 'package:food_ninja/pages/signup_login/login.dart';
 import 'package:food_ninja/pages/signup_login/signup0.dart';
 import 'package:food_ninja/pages/signup_login/signup1.dart';
+import 'package:food_ninja/res/hard_code.dart';
 import 'package:food_ninja/test_main.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
@@ -18,7 +22,7 @@ void main() {
   runApp(MaterialApp(
     initialRoute: '/',//TODO : ADD ROUTE
     routes: {
-      '/': (context) => const Login(), //change Class name with your page widget and import the widget
+      '/': (context) => FoodPage(food: HardCode.food), //change Class name with your page widget and import the widget
       // '/splash': (context) => const SplashPage0(),
       // '/splashPage1': (context) => const SplashPage1(),
       // '/splashPage2': (context) => const SplashPage2(),
@@ -28,11 +32,11 @@ void main() {
       '/login': (context) => const Login(),
       // '/Checkout': (context) => Checkout(),
       // '/ConfirmOrder': (context) => ConfirmOrder(),
-      // '/notification_page': (context) => const NotificationPage(),
+      '/notification_page': (context) => const NotificationPage(),
       // '/edit_payment': (context) => const EditPayments(),
       // '/edit_location': (context) => const EditLocation(),
-      // '/restaurant_page': (context) => RestaurantPage(restaurant: HardCode.restaurant),
-      // '/food_page': (context) => FoodPage(food: HardCode.food),
+      '/restaurant_page': (context) => RestaurantPage(restaurant: HardCode.restaurant),
+      '/food_page': (context) => FoodPage(food: HardCode.food),
       // '/ExploreMenu': (context) => const ExploreMenu(),
       // '/ExploreRestaurantWIthFilter': (context) => const ExploreRestaurantWIthFilter(),
     },
