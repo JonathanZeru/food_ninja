@@ -1,7 +1,9 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:food_ninja/pages/splashpage1.dart';
-import 'package:food_ninja/res/res.dart';
+import 'package:food_ninja/pages/splash_pages/splash_page1.dart';
+
+import '../../res/gradient_text.dart';
+import '../../res/my_colors.dart';
 
 void main() async {
   runApp(const MaterialApp(

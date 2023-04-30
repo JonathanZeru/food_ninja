@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:food_ninja/res/button.dart';
+import 'package:food_ninja/res/buttons/green_button.dart';
 
 class SplashPage1 extends StatefulWidget {
   const SplashPage1({Key? key}) : super(key: key);
