@@ -23,7 +23,7 @@ void main() {
     initialRoute: '/',//TODO : ADD ROUTE
     routes: {
       '/': (context) => FoodPage(food: HardCode.food), //change Class name with your page widget and import the widget
-      // '/splash': (context) => const SplashPage0(),
+      '/splash': (context) => const SplashPage0(),
       // '/splashPage1': (context) => const SplashPage1(),
       // '/splashPage2': (context) => const SplashPage2(),
       '/signup0': (context) => const Signup0(),
